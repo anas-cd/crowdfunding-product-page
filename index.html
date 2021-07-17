@@ -32,17 +32,136 @@
           </style>
     </head>
     <body>
+        <div class="heroimage"></div>
+        <nav>
+            <img src="images/logo.svg" alt="logo">
+            <img src="images/icon-hamburger.svg" alt="icon-hamburger" class="mobileBurger">
+            <a href="#" class="pagelinks">About</a>
+            <a href="#" class="pagelinks">Discover</a>
+            <a href="#" class="pagelinks">Get Started</a>
+            <div class="links">
+                <a href="#" class="pagelinks">About</a>
+                <a href="#" class="pagelinks">Discover</a>
+                <a href="#" class="pagelinks">Get Started</a>
+            </div>
+
+        </nav>
 
         <main>
             
-            <h1>your boilerplate is ready</h1>
+            <div class="projectMain">
+                <img src="images/logo-mastercraft.svg" alt="master craft logo">
+                <h1>Mastercraft Bamboo Monitor Riser</h1>
+                <p>A beautiful & handcrafted monitor stand to reduce neck and eye strain.
+                </p>
+                <div class="buttons">
+                    <button class="back_button">Back this project</button>
+                    <button class="bookmark_button">
+                        <img src="images/icon-bookmark.svg" alt="icon-bookmark">
+                        <p>Bookmark</p> 
+                    </button>     
+                </div>
+                
+            </div>
+
+            <div class="projectStats">
+                <div class="statBoxes">
+                    <div class="stats">
+                        <h1>$<span class="moneyBacked">89914</span></h1>
+                        <p>of $100,000 backed</p>
+                    </div>
+                    <div class="stats">
+                        <h1><span class="numOfBackers">5,007</span></h1>
+                        <p>total backers</p>
+                    </div>
+                    <div class="stats">
+                        <h1>56</h1>
+                        <p>days left</p>
+                    </div>
+                </div>
+                <div class="progressBar">
+                    <label for="file"></label>
+                    <progress id="file" value="70000" max="100000">
+                        <!-- HTML fall back elements -->
+                        <div class="progress-bar">
+                            <span style="width: 80%;">Progress: 80%</span>
+                        </div>
+                    </progress>
+                </div>
+            </div>
+
+            <div class="projectFund">
+                <h2>About this project</h2>
+                <p>The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen 
+                    to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve 
+                your posture and make you more comfortable while at work, helping you stay focused on the task at hand.
+                </p>
+                <p> Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer 
+                    to allow notepads, pens, and USB sticks to be stored under the stand.
+                </p>
+
+                <div class="pledge">
+                    <div class="edition">
+                        <h2>Bamboo Stand</h2>
+                        <p>Pledge $25 or more</p>
+                    </div>
+                    <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and 
+                    you’ll be added to a special Backer member list.
+                    </p>
+                    <div class="tickets">
+                        <p><span class="ticketsLeft">101</span> left</p>
+                        <button>Select Reward</button>
+                    </div>
+                </div>
+                <div class="pledge">
+                    <div class="edition">
+                        <h2>Black Edition Stand</h2>
+                        <p>Pledge $75 or more</p>
+                    </div>
+                    <p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer 
+                    member list. Shipping is included.</p>
+                    <div class="tickets">
+                        <p><span class="ticketsLeft">64</span> left</p>
+                        <button>Select Reward</button>
+                    </div>
+                </div>
+                <div class="pledge">
+                    <div class="edition">
+                        <h2>Mahogany Special Edition</h2>
+                        <p>Pledge $200 or more</p>
+                    </div>
+                    <p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added 
+                    to our Backer member list. Shipping is included.</p>
+                    <div class="tickets">
+                        <p><span class="ticketsLeft">0</span> left</p>
+                        <button disabled>Out of Stock</button>
+                    </div>
+                </div>
+
+            </div>
             
+            
+
         </main>
+        <div class="selectionContainer_background">
+            <div class="selectionContainer">
+                <img src="images/icon-close-modal.svg" alt="icon-close-modal">
+                <h1>Back this project</h1>
+                <p>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
+                <div class="rewards"></div>
+                <div class="rewards"></div>
+                <div class="rewards"></div>
+                <div class="rewards"></div>
+            </div>
+
+        </div>
         <div class="attribution">
             Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
             Coded by <a href="https://twitter.com/AnasCd">Anas Ali</a>.
         </div>
         <!-- JavaScript File -->
         <script src="app/dist/all.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     </body>
 </html>

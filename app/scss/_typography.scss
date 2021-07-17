@@ -3,11 +3,29 @@ h1, h2, h3 {
 }
 
 h1 {
+    font-size: 1.7rem;
     text-transform: uppercase;
     color: $black;
+    font-weight: 700;
+    @media #{$mq-700-down}{
+        font-size: 1.6rem;
+        text-align: center;
+    }
 }
 
+h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+p {
+    color: $dk_gray;
+    line-height: 1.5;
+    font-size: 1.05rem;
+    font-weight: 500;
+}
 body {
     font-size: 1rem;
     font-family: 'Commissioner', sans-serif;
+    line-height: 1.3;
 }
