@@ -36,7 +36,7 @@ app.global = {
             body.style.overflow = "auto";
             nav.style.height = "auto";
             nav.style.boxShadow = "none";
-            mobileMenue.style.content = "url(../../images/icon-hamburger.svg)"
+            mobileMenue.style.content = "url(images/icon-hamburger.svg)"
         } else {
             mobileMenueLinks.classList.add("flexer");
             // mobileMenueLinks.style.opacity = "1";
@@ -47,7 +47,7 @@ app.global = {
             body.style.overflow = "hidden";
             nav.style.height = "200vh";
             nav.style.boxShadow = "inset 0px 500px 338px -127px black";
-            mobileMenue.style.content = "url(../../images/icon-close-menu.svg)"
+            mobileMenue.style.content = "url(images/icon-close-menu.svg)"
         }
     },
     checker: function (rb) {
