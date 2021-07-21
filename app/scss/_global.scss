@@ -695,7 +695,7 @@ main {
                         width: 1rem;
                         margin-right: 1.4rem;
                         border-radius: 50%;
-                        border: 0.1em solid #bdbdbd;
+                        border: 0.125em solid #bdbdbd;
                         transform: translateY(-10px);
                         padding-right: 23px;
                         padding-bottom: 23px;
@@ -706,8 +706,8 @@ main {
                         .circule {
                             background: #3cb4ac; 
                             background: radial-gradient(circle,#3cb4ac 40%,#fff 45%,#fff 100%);
-                            height: 22px;
-                            width: 22px;
+                            height: 23px;
+                            width: 23px;
                             position: unset;
                             border-radius: 50%;
                             margin: 0;
