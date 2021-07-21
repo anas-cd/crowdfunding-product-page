@@ -55,10 +55,10 @@
                 <p>A beautiful & handcrafted monitor stand to reduce neck and eye strain.
                 </p>
                 <div class="buttons">
-                    <button class="back_button">Back this project</button>
+                    <button class="back_button pbtn">Back this project</button>
                     <button class="bookmark_button">
                         <img src="images/icon-bookmark.svg" alt="icon-bookmark">
-                        <p>Bookmark</p> 
+                        <p id="bookmarking">Bookmark</p> 
                     </button>     
                 </div>
                 
@@ -67,11 +67,11 @@
             <div class="projectStats">
                 <div class="statBoxes">
                     <div class="stats">
-                        <h1>$<span class="moneyBacked">89914</span></h1>
+                        <h1>$<span class="moneyBacked">10,914</span></h1>
                         <p>of $100,000 backed</p>
                     </div>
                     <div class="stats">
-                        <h1><span class="numOfBackers">5,007</span></h1>
+                        <h1><span class="numOfBackers">2,007</span></h1>
                         <p>total backers</p>
                     </div>
                     <div class="stats">
@@ -81,7 +81,7 @@
                 </div>
                 <div class="progressBar">
                     <label for="file"></label>
-                    <progress id="file" value="70000" max="100000">
+                    <progress id="file" value="10914" max="100000">
                         <!-- HTML fall back elements -->
                         <div class="progress-bar">
                             <span style="width: 80%;">Progress: 80%</span>
@@ -110,7 +110,7 @@
                     </p>
                     <div class="tickets">
                         <p><span class="ticketsLeft">101</span> left</p>
-                        <button>Select Reward</button>
+                        <button class="pbtn">Select Reward</button>
                     </div>
                 </div>
                 <div class="pledge">
@@ -122,7 +122,7 @@
                     member list. Shipping is included.</p>
                     <div class="tickets">
                         <p><span class="ticketsLeft">64</span> left</p>
-                        <button>Select Reward</button>
+                        <button class="pbtn" >Select Reward</button>
                     </div>
                 </div>
                 <div class="pledge">
@@ -143,18 +143,151 @@
             
 
         </main>
+
         <div class="selectionContainer_background">
             <div class="selectionContainer">
-                <img src="images/icon-close-modal.svg" alt="icon-close-modal">
+                <img src="images/icon-close-modal.svg" alt="icon-close-modal" id="icon_close_modal">
                 <h1>Back this project</h1>
                 <p>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
-                <div class="rewards"></div>
-                <div class="rewards"></div>
-                <div class="rewards"></div>
-                <div class="rewards"></div>
-            </div>
+                
+                <div class="rewards">
+                    <div class="csections">
+                        <label class="radio">
+                            <span class="radio__input">
+                                <input type="radio" name="pledger" id="no_rewards" value="none"/>
+                                <span class="radio__control"><span class="circule"></span></span>
+                                </span>
+                        </label>
 
+                        <label for="no_rewards">Pledge with no reward</label>
+                        <p></p>
+                        <p><span class="tickLeft"></span></p>
+ 
+ 
+                        <p>Choose to support us without a reward if you simply believe in our project. As a backer, 
+                            you will be signed up to receive product updates via email.</p>
+                    </div>
+                    <div class="csections">
+                        <p>Enter your pledge</p>
+                        <div class="moneyInputContainer">
+                            <p>$</p>
+                            <input type="number" name="moneyAmount" id="amount" value="0" min="0" step="1" disabled>
+                        </div>
+                        <button class="contbtn">Continue</button>
+                    </div>
+                </div>
+                <div class="rewards">
+ 
+
+ 
+                    <div class="csections">
+                        <label class="radio">
+                            <span class="radio__input">
+                                <input type="radio" name="pledger" id="Bamboo" value="bamboo"/>
+                                <span class="radio__control"><span class="circule" style="    transform: translateY(1px);"></span></span>
+                              </span>
+                        </label>
+                        <div class="try">
+                            <label for="Bamboo">Bamboo Stand</label>
+                            <p>Pledge $25 or more</p>
+                        </div>
+
+                        <p><span class="tickLeft">101</span> left</p>
+
+                        <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
+                        you’ll be added to a special Backer member list.</p>
+
+                        
+                    </div>
+                    <div class="csections">
+                        <p>Enter your pledge</p>
+                        <div class="moneyInputContainer">
+                            <p>$</p>
+                            <input type="number" name="moneyAmount" id="amount" value="25" min="25" step="1">
+                        </div>
+                        <button class="contbtn">Continue</button>
+                    </div>
+                </div>
+
+                <div class="rewards">
+ 
+
+ 
+                    <div class="csections">
+                        <label class="radio">
+                            <span class="radio__input">
+                                <input type="radio" name="pledger" id="Black" value="black"/>
+                                <span class="radio__control helper_paddingTop1pix"  ><span class="circule" ></span></span>
+                              </span>
+                        </label>
+                        <div class="try">
+                            <label for="Black">Black Edition Stand</label>
+                            <p>Pledge $75 or more</p>
+                        </div>
+
+                        <p><span class="tickLeft">64</span> left</p>
+
+                        <p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
+                        member list. Shipping is included.</p>
+ 
+                        
+                    </div>
+                    <div class="csections">
+                        <p>Enter your pledge</p>
+                        <div class="moneyInputContainer">
+                            <p>$</p>
+                            <input type="number" name="moneyAmount" id="amount" value="75" min="75" step="1" >
+                        </div>
+                        <button class="contbtn">Continue</button>
+                    </div>
+                </div>
+
+                <div class="rewards">
+ 
+
+                        
+ 
+                    <div class="csections">
+                        <label class="radio">
+                            <span class="radio__input">
+                                <input type="radio" name="pledger" id="Mahogany" value="Mahogany" disabled/>
+                                <span class="radio__control desabled" ><span class="circule"></span></span>
+                              </span>
+                        </label>
+ 
+                        <div class="try">
+                            <label for="Mahogany">Mahogany Special Edition</label>
+                            <p>Pledge $200 or more</p>
+                        </div>
+
+                        <p><span class="tickLeft">0</span> left</p>
+
+                        <p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
+                            to our Backer member list. Shipping is included.</p>
+ 
+                        
+                    </div>
+                    <div class="csections">
+                        <p>Enter your pledge</p>
+                        <div class="moneyInputContainer">
+                            <p>$</p>
+                            <input type="number" name="moneyAmount" id="amount" value="200" min="200" step="1">
+                        </div>
+                        <button class="contbtn">Continue</button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="thanks">
+                <img src="images/icon-check.svg" alt="icon-check">
+                <h2>Thanks for your support!</h2>
+                <p>Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
+                    an email once our campaign is completed.</p>
+                <button id="gotItbtn">Got it!</button>
+            </div>
         </div>
+
+
         <div class="attribution">
             Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
             Coded by <a href="https://twitter.com/AnasCd">Anas Ali</a>.
